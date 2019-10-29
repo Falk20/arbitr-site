@@ -1,10 +1,10 @@
 import React from 'react';
 import './LeftSidebar.scss';
-import Menu from './menu/Menu.jsx';
+import Menu from './menu/Menu';
 import Card from './card/Card';
 
 
-class LeftSidebar extends React.Component {
+export default class LeftSidebar extends React.Component {
     render (){
         return (
             <aside className="left-aside">
@@ -14,5 +14,3 @@ class LeftSidebar extends React.Component {
         )
     }
 }
-
-export default LeftSidebar;
