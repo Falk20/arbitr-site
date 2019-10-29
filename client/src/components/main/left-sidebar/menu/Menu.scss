@@ -1,0 +1,14 @@
+ul.menu {
+    li {
+        a {
+            
+            &:visited { 
+                color: black;
+             } 
+
+            &:hover {
+                color: #e1000e;
+            }
+        }
+    }
+}
