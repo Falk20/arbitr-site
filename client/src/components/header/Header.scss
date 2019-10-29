@@ -1,0 +1,32 @@
+header {
+  display: flex;
+
+  background: url(/img/fon_gerb.gif) no-repeat;
+  background-size: cover;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 0;
+  img {
+    display: block;
+    margin: 0 2%;
+  }
+
+  h1 {
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    flex-direction: column;
+    padding: 20px 5px;
+
+    h1 {
+        text-align: center;
+    }
+  }
+}
