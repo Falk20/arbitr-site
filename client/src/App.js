@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.scss';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
 
-class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <div>
@@ -13,5 +13,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;
