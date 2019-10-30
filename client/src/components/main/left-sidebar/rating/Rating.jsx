@@ -16,7 +16,7 @@ const ratings = [
 export default class Rating extends Component {
     render() {
         return (
-            <div>
+            <div className="rating">
                 {ratings.map((link) =>
                     <a href={link.url}>
                         <img src={link.img} alt="" />
