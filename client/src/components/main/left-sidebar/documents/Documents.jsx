@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Documents.scss';
+import Document from './Document';
 
 
 const docsList = [
@@ -17,16 +18,9 @@ const docsList = [
 export default class Documents extends Component {
     render() {
         return (
-            <ul>
+            <ul className="documents">
                 {docsList.map((doc) =>
-                    <li>
-                        <h1>
-                            <a href="#">
-                                <img src="/img/icon_doc.gif" alt="" />
-                                <span>{doc}</span>
-                            </a>
-                        </h1>
-                    </li>
+                   <Document doc={doc}></Document>
                 )}
             </ul>
         )
