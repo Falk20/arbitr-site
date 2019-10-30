@@ -1,0 +1,14 @@
+.third-party {
+  li {
+    margin-bottom: 20px;
+
+    a {
+      font-weight: 200;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

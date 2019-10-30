@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-wrap: nowrap;
+
+  padding-top: 10px;
+  border-top: solid 1px #e3dbcf;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+
+  a {
+    font-weight: bold;
+    color: black;
+    &:visited {
+      color: black;
+    }
+
+    &:hover {
+      color: #e1000e;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .left-aside,
+    .right-aside,
+    .content {
+      width: 100%;
+    }
+    .left-aside {
+      display: none;
+    }
+  }
+}

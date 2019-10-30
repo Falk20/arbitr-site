@@ -1,15 +1,18 @@
 .left-aside {
-    font-family: Verdana, sans-serif;
-    font-size: 12px;
-    
-    a {
-            
-        &:visited { 
-            color: black;
-         } 
+  width: 20%;
 
-        &:hover {
-            color: #e1000e;
-        }
-    }
+  a {
+    font-weight: bold;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px 15px;
+    list-style: none;
+    background: #f6e3cb;
+  }
 }

@@ -1,0 +1,9 @@
+.rating {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    a {
+        display: block;
+        margin: 0px auto;
+    }
+}
