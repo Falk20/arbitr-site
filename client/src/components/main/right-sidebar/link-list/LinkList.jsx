@@ -36,8 +36,8 @@ export default class LinkList extends Component {
     render() {
         return (
             <ul className="third-party">
-                {links.map((link)=>
-                    <li><a href={link.url}>{link.text}</a></li>
+                {links.map((link, id)=>
+                    <li key={id}><a href={link.url}>{link.text}</a></li>
                 )}
             </ul>
         )

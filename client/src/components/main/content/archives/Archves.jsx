@@ -25,8 +25,8 @@ export default class Archves extends Component {
     render() {
         return (
             <ul className='archives'>
-                {archivesList.map((archive) =>
-                    <Archive link={archive.link} text={archive.text}></Archive>
+                {archivesList.map((archive, id) =>
+                    <Archive archive={archive} key={id} ></Archive>
                 )}
             </ul>
         )

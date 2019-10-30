@@ -6,7 +6,7 @@ import LinkList from './link-list/LinkList';
 export default class RightSidebar extends Component {
     render() {
         return (
-            <aside>
+            <aside className="right-aside">
                 <Search></Search>
                 <LinkList></LinkList>
                 <img src="/img/stat51.gif" alt=""/>

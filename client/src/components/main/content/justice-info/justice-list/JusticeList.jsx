@@ -24,8 +24,8 @@ export default class JusticeList extends Component {
     render() {
         return (
             <ul className='justice-list'>
-                {justiceArr.map((justice)=>
-                    <li><a href={justice.link}>{justice.text}</a></li>
+                {justiceArr.map((justice, id)=>
+                    <li key={id}><a href={justice.link}>{justice.text}</a></li>
                 )}
             </ul>
         )

@@ -19,8 +19,8 @@ export default class Documents extends Component {
     render() {
         return (
             <ul className="documents">
-                {docsList.map((doc) =>
-                   <Document doc={doc}></Document>
+                {docsList.map((doc, id) =>
+                   <Document doc={doc} key={id}></Document>
                 )}
             </ul>
         )

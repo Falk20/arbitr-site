@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 
 export default class Document extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
-            <li>
+            <li key={this.props.doc}>
                 <a href="#">
                     <img src="/img/icon_doc.gif" alt="" />
                     <span>{this.props.doc}</span>
