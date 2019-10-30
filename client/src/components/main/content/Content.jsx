@@ -10,11 +10,13 @@ const title = 'Федеральные арбитражные суды РФ'
 export default class Content extends Component {
     render() {
         return (
-            <div className='content'>
+            <div className="center">
                 <Archves></Archves>
-                <Breadcrumbs title={title}></Breadcrumbs>
-                <PageTitle title={title}></PageTitle>
-                <JusticeInfo></JusticeInfo>
+                <div className="content">
+                    <Breadcrumbs title={title}></Breadcrumbs>
+                    <PageTitle title={title}></PageTitle>
+                    <JusticeInfo></JusticeInfo>
+                </div>
             </div>
         )
     }
