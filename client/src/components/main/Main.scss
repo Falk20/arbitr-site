@@ -1,17 +1,16 @@
 main {
   display: flex;
   flex-wrap: nowrap;
-
-  padding-top: 10px;
+  
   border-top: solid 1px #e3dbcf;
   font-family: Verdana, sans-serif;
   font-size: 12px;
 
   a {
     font-weight: bold;
-    color: black;
+    color: #0c1902;
     &:visited {
-      color: black;
+      color: #0c1902;
     }
 
     &:hover {
@@ -24,13 +23,23 @@ main {
   main {
     flex-direction: column;
     flex-wrap: wrap;
+
+
     .left-aside,
     .right-aside,
-    .content {
+    .center {
       width: 100%;
     }
+
     .left-aside {
-      display: none;
+      order: 1;
+    }
+    .right-aside {
+      order: 2;
+    }
+
+    .center {
+      order: 0;
     }
   }
 }
