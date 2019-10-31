@@ -8,7 +8,7 @@ export default class Search extends Component {
                 <h3>Поиск по сайту</h3>
                 <form >
                     <input type="search" name="" id="" />
-                    <input type="image" src="/img/search.gif" alt="" />
+                    <input type="image" src="/img/search.svg" alt="" />
                 </form>
             </div>
         )

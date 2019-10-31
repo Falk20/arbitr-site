@@ -1,7 +1,12 @@
 .aside-card {
     padding: 10px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     a {
+        display: block;
+        max-width: 300px;
         text-decoration: none;
         font-weight: 200;
         &:hover {

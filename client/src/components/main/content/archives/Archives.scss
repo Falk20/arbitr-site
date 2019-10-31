@@ -1,0 +1,44 @@
+.archives {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 25%;
+    min-width: 100px;
+    background: url(/img/bn-bg-02.gif) no-repeat;
+    height: 66px;
+
+    a {
+      display: block;
+      text-align: center;
+      color: #0c1902;
+      width: 100%;
+      &:hover {
+        color: #e1000e;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 868px) {
+    .archives li {
+        max-width: 50%;
+        width: auto;
+    }
+}
+
+@media (max-width: 520px) {
+  .archives li {
+    max-width: 50%;
+    width: auto;
+  }
+}

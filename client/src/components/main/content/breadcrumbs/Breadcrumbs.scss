@@ -1,0 +1,21 @@
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    color: #934607;
+
+    li {
+
+        list-style: none;
+
+        a {
+            font-weight: 200;
+            color: #934607;
+        }
+    }
+
+    & > span {
+        margin: 0 4px;
+    }
+}

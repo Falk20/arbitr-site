@@ -9,11 +9,19 @@
       img,
       span {
         display: block;
+        max-width: 80%;
       }
 
       img {
         margin-right: 5px;
       }
     }
+  }
+}
+
+@media (max-width: 850px) and (min-width: 769px) {
+  .documents li {
+    padding: 0;
+    font-size: 11px;
   }
 }

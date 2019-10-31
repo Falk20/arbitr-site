@@ -1,0 +1,17 @@
+.justice-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    li {
+        list-style: none;
+        max-width: 120px;
+
+        a {
+            width: 100%;
+        }
+    }
+}
