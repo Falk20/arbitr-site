@@ -5,7 +5,7 @@ import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 import PageTitle from './page-title/PageTitle';
 import JusticeInfo from './justice-info/JusticeInfo';
 
-const title = 'Федеральные арбитражные суды РФ'
+const title = 'Федеральные арбитражные суды Российской Федерации'
 
 export default class Content extends Component {
     render() {
