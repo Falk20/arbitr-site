@@ -1,0 +1,11 @@
+.search-requests {
+  ol {
+    li {
+      p {
+        max-height: 6ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
