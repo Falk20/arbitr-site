@@ -6,8 +6,12 @@ export default class Breadcrumbs extends Component {
         return (
             <ul className='breadcrumbs'>
                 <li><a href="/">Главная страница</a></li>
-                <span>&#9658;</span>
-                <li>{this.props.title}</li>
+                {this.props.title.map((item, id) =>
+                    <li key={id}>
+                        <span>&#9658;</span>
+                        {item}
+                    </li>
+                )}
             </ul>
         )
     }
