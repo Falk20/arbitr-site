@@ -1,5 +1,5 @@
 .left-aside {
-  width: 20%;
+  width: 15%;
 
   a {
     font-weight: bold;
@@ -14,5 +14,11 @@
     padding: 10px 15px;
     list-style: none;
     background: #f6e3cb;
+  }
+}
+
+@media (max-width: 1440px) {
+  .left-aside {
+      width: 20%;
   }
 }

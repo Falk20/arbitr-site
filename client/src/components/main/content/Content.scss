@@ -1,5 +1,5 @@
 .center {
-    width: 60%;
+    width: 70%;
     box-sizing: border-box;
     border-left: solid 1px #EBD9C5;
     border-right: solid 1px #EBD9C5;
@@ -11,5 +11,11 @@
     
     a {
         font-weight: normal;
+    }
+}
+
+@media (max-width: 1440px) {
+    .center {
+        width: 60%;
     }
 }
