@@ -1,0 +1,40 @@
+.arb-list {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 70%;
+    align-self: center;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    color: #934607;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+
+    li {
+      list-style: none;
+      margin: 10px;
+
+      a {
+        font-weight: normal;
+        color: #934607;
+      }
+
+      & > span {
+        margin: 0 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .arb-list {
+    img {
+      width: 100%;
+    }
+  }
+}
