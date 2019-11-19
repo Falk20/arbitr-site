@@ -5,6 +5,7 @@ import JusticeInfo from './justice-info/JusticeInfo';
 import SearchRequests from './search-request/SearchRequests';
 import PressCentr from './press-centr/PressCentr';
 import JusticeLocation from './justice-location/JusticeLocation';
+import ArbitrList from './arbitr-list/ArbitrList';
 
 const titles = [
     'Федеральные арбитражные суды Российской Федерации',
@@ -37,10 +38,19 @@ export default class Content extends Component {
             case "/sip/":
                 content =
                     <>
-                        <Breadcrumbs title={[titles[0],titles[3]]}></Breadcrumbs>
+                        <Breadcrumbs title={[titles[0], titles[3]]}></Breadcrumbs>
                         <PageTitle title={titles[3]}></PageTitle>
                         <JusticeLocation></JusticeLocation>
                     </>
+                break;
+            case "/okrug/":
+                content = <ArbitrList title={[titles[0], 'Арбитражные суды округов']}></ArbitrList>
+                break;
+            case "/appeal/":
+                content = <ArbitrList title={[titles[0], 'Арбитражные апелляционные суды']}></ArbitrList>
+                break;
+            case "/subj/":
+                content = <ArbitrList title={[titles[0], 'Арбитражные суды субъектов РФ']}></ArbitrList>
                 break;
             default:
                 content =
