@@ -23,14 +23,9 @@ app.use(mainPage);
 
 app.use(bodyParser.json());
 
-app.use('/search', mainPage);
-
-app.use('/press-centr/', mainPage);
-
-app.use('/sip/', mainPage);
-
-
 app.use('/api', routes);
+
+app.use('/*', mainPage);
 
 app.use(function (err, req, res, next) {
     //console.log(err);
