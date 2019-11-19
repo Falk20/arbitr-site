@@ -52,7 +52,7 @@ let justice = {
             name: 'Новоселова Л.А.'
         }
     ],
-    LocationMap: [55.809914, 37.607035]
+    LocationMap: [55.809806, 37.607338]
 }
 
 export default class JusticeLocation extends Component {
