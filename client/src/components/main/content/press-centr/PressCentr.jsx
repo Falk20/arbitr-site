@@ -6,7 +6,10 @@ export default class PressCentr extends Component {
         super(props)
 
         this.state = {
-            article: {}
+            title: "",
+            body: [],
+            publicationDate: "",
+            source: ""
         }
     }
 
@@ -18,20 +21,22 @@ export default class PressCentr extends Component {
             .then(
                 (result) => {
                     this.setState({
-                        article: result
+                        title: result.title,
+                        body: result.body.split('\n\n').map((item, id) => <p key={id}>{item}</p>),
+                        publicationDate: result.publicationDate,
+                        source: result.source
                     })
                 }
             );
     }
 
     render() {
-        let date = new Date(this.state.article.publicationDate);
-
+        let date = new Date(this.state.publicationDate);
         return (
             <div className="article">
-                <h3>{this.state.article.title}</h3>
-                <p>{this.state.article.body}</p>
-                <p className="source">{this.state.article.source}, {date.toLocaleDateString()}</p>
+                <h3>{this.state.title}</h3>
+                {this.state.body}
+                <p className="source">{this.state.source}, {date.toLocaleDateString()}</p>
             </div>
         )
     }
